@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.ricktech">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:name=".share.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RickTech"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+
+        <activity
+            android:name=".uis.separate_not_book_module.activity_separate_note_book_sub_building.SeparateNoteBookSubBuildingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".uis.separate_not_book_module.separate_note_book_categories.SeparateNoteBookCategoriesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".uis.separate_not_book_module.separate_note_book_brand.SeparateNoteBookBrandActivity"
+            android:exported="true" />
+
+
+
+        <activity
+            android:name=".uis.separate_laptop_gaming_module.activity_separate_laptop_gaming_sub_building.SeparateLaptopGamingSubBuildingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".uis.separate_laptop_gaming_module.separate_laptop_gaming_categories.SeparateLaptopGamingCategoriesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".uis.separate_laptop_gaming_module.separate_laptop_gaming_brand.SeparateLaptopGamingBrandActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".uis.separate_gaming_module.activity_separate_gaming_sub_building.SeparateGamingSubBuildingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".uis.separate_gaming_module.separate_gaming_categories.SeparateGamingCategoriesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".uis.separate_gaming_module.separate_gaming_brand.SeparateGamingBrandActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".uis.separate_pc_module.separate_pc_categories.SeparatePcCategoriesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".uis.separate_pc_module.separate_pc_brand.SeparatePcBrandActivity"
+            android:exported="true" />
+        <activity
+            android:name=".uis.general_module.activity_search.SearchActivity"
+            android:exported="true" />
+        <activity android:name=".uis.orders_module.activity_order_build_details.OrderBuildDetailsActivity" />
+        <activity android:name=".uis.orders_module.activity_order_details.OrderDetailsActivity" />
+        <activity android:name=".uis.orders_module.activity_orders.OrdersActivity" />
+        <activity android:name=".uis.general_module.activity_cart_details.CartDetailsActivity" />
+        <activity
+            android:name=".uis.saved_build_module.activity_saved_buldings.SavedBuildingsActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.saved_build_module.activity_saving_build.SavingBuildActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_web_view.WebViewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_notifications.NotificationActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.suggestions_module.activity_suggestion_sub_building.SuggestionSubBuildingActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.suggestions_module.activity_suggestion_products.SuggestionProductsActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.suggestions_module.activity_suggestion_buildings.SuggetionBuildingsActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.suggestions_module.activity_suggestions.SuggestionBrandActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.accessory_module.activity_accessory_product_details.AccessoryProductDetailsActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.accessory_module.activity_accessory_products.AccessoryProductsActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.pc_building_module.activity_games.GamesActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.pc_building_module.activity_sub_bulding.SubBuildingActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.pc_building_module.activity_building_products.ProductBuildingActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.pc_building_module.activity_building.BulidingActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.gaming_laptop_module.activity_gaming_product_details.GamingProductDetailsActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.pc_building_module.activity_building_product_details.BulidingProductDetailsActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_reset_password.ResetPasswordActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_product_detials.ProductDetialsActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.gaming_laptop_module.activity_product.ProductActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.gaming_laptop_module.activity_categories.CategoriesActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.accessory_module.activity_accessories.AccessoriesActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_verification_code.VerificationCodeActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_map.MapActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_checkout.CheckoutActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_sign_up.SignUpActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_forget_password.ForgetPasswordActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_login.LoginActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_language.LanguageActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_home.HomeActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".uis.general_module.activity_splash.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name=".notifications.FireBaseMessaging"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
