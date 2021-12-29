@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ريك تك</string>
+    <string name="app_name">متجر بي سي</string>
     <string name="map_api_key">AIzaSyAnjvMAJEmiAv3yeCDUXWv-PboXiT_uaoQ</string>
     <string name="field_required">الحقل مطلوب</string>
     <string name="inv_email">ايميل خاطئ</string>
